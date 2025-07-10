@@ -1,0 +1,124 @@
+body {
+    position: relative;
+    background-color: #1c1c1c; /* fallback if image doesn't load */
+    color: #f2f0eb;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Remove background-image from body, move to ::before */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background-image: url('images/pexels-wb2008-2129970.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.; /* adjust opacity as needed */
+    pointer-events: none;
+}
+
+.brand {
+  font-family: 'Fraunces', serif;
+  font-size: 6rem; /* doubled from original 3rem */
+  color: #c89c63; /* navy/denim shade */
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25em;
+  /* text-shadow: 1px 1px 2px rgba(0,0,0,0.1); optional, for legibility */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 22, 30, 0.5); /* denim-tone black overlay */
+  z-index: 0;
+}
+
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 10vh auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.brand {
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25em;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.signup-form input {
+  font-family: 'Red Hat Mono', monospace;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: #f2f0eb;
+  background-color: #2f3e5c; /* deep navy or indigo */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  letter-spacing: 0.02em;
+}
+
+.signup-form button:hover {
+  background-color: #1e2c45; /* slightly darker hover */
+}
+
+.note {
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #2f3e5c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.insta-icon {
+  color: #a5b7c8; /* your navy/denim tone */
+  transition: transform 0.2s ease;
+}
+
+.insta-icon:hover {
+  transform: scale(1.15);
+  color: #1e2c45; /* darker hover shade */
+}
