@@ -82,15 +82,21 @@ body::before {
 
 .signup-form button {
   font-family: 'Fraunces', serif;
-  padding: 0.75rem 2rem;
-  background-color: #2f3e5c;
-  color: white;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: #f2f0eb;
+  background-color: #2f3e5c; /* deep navy or indigo */
   border: none;
+  border-radius: 3px;
   cursor: pointer;
+  transition: background 0.2s ease;
+  letter-spacing: 0.02em;
 }
 
 .signup-form button:hover {
-  background-color: #1e293b;
+  background-color: #1e2c45; /* slightly darker hover */
 }
 
 .note {
